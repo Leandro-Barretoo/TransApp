@@ -171,3 +171,103 @@ p {
 .mem-login-links input {
     margin-left: 10px;
 }
+
+.group-index-container {
+    height: 100%;
+    background-color: #ededed;
+}
+
+.navigation {
+    background-color: #3778c2;
+    padding: 20px 10px;
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.page-header {
+    display: block;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 22px;
+}
+
+.navigation-logo {
+    font-family: 'Pacifico', sans-serif;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.navigation-links form button {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+    opacity: 0.5;
+    margin-top: 8px;
+    border-radius: 50%;
+}
+
+.add-category-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.add-category-btn {
+    background-color: #5fb523;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.group-container {
+    padding: 15px;
+}
+
+.group-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.group-item {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin: 17px 0;
+}
+
+.group-icon {
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px auto;
+}
+
+.group-name {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 15px;
+}
