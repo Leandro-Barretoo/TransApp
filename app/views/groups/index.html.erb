@@ -14,7 +14,10 @@
             <%= link_to group_path(group.id) do %>
                 <div class="group-item">
                     <div class="group-icon" style="background-image: url(<%= group.icon %>)"></div>
-                    <div class="group-name"><%= group.name %></div>
+                    <div class="group-info">
+                        <div class="group-name"><%= group.name %></div>
+                        <div class="group-total">$<%= group.total %></div>
+                    </div>
                 </div>
             <% end %>
         <% end %>
