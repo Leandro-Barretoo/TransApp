@@ -1,0 +1,23 @@
+<div class="signup-form-container">
+    <%= form_with(model: @buy) do |form| %>
+        <div class="signup-nav">
+            <%= render "devise/shared/back" %>
+            <h2 style="margin-top: 50px;">New Transaction</h2>
+            <%= form.submit "Save" %>
+        </div>
+        <div class="input-fields">
+            <div class="field">
+                <%= form.text_field :name, autofocus: true, placeholder: "Name", required: true %>
+            </div>
+            <div class="devider"></div>
+            <div class="field">
+                <%= form.number_field :amount, placeholder: "Amount ($)", required: true %>
+            </div>
+            <div class="devider"></div>
+            <div class="field">
+                <%= form.collection_select :group_ids, current_user.groups.order(:name), :id, :name, {}, { class: "input" } %>
+            </div>
+        </div>
+        <%= render "devise/shared/error_messages", resource: @buy %>
+    <% end %>
+</div>

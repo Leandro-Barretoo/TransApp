@@ -1,0 +1,25 @@
+<div class="group-index-container">
+    <div class="navigation">
+        <div class="navigation-links">
+            <span class="navigation-logo">BuySave</span>
+            <%= button_to destroy_user_session_url, method: :delete, class: 'button has-text-white' do %>
+                <span class="logout-btn">Logout</span>
+            <% end %>
+        </div>
+        <span class="page-header">Categories</span>
+        <span class="dot"></span>
+    </div>
+    <div class="group-container">
+        <% @groups.each do |group| %>
+            <%= link_to group_path(group.id) do %>
+                <div class="group-item">
+                    <div class="group-icon" style="background-image: url(<%= group.icon %>)"></div>
+                    <div class="group-name"><%= group.name %></div>
+                </div>
+            <% end %>
+        <% end %>
+    </div>
+    <div class="add-category-container">
+        <%= link_to 'Add category', new_group_path, class: "add-category-btn" %>
+    <div>
+</div>

@@ -1,0 +1,19 @@
+<div class="signup-form-container">
+    <%= form_with(model: @group) do |form| %>
+        <div class="signup-nav">
+            <%= render "devise/shared/back" %>
+            <h2 style="margin-top: 30px;">New Category</h2>
+            <%= form.submit "Save" %>
+        </div>
+        <div class="input-fields">
+            <div class="field">
+                <%= form.text_field :name, autofocus: true, placeholder: "Name", required: true %>
+            </div>
+            <div class="devider"></div>
+            <div class="field">
+                <%= form.url_field :icon, placeholder: "Icon", required: true %>
+            </div>
+        </div>
+        <%= render "devise/shared/error_messages", resource: @group %>
+    <% end %>
+</div>
