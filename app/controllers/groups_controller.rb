@@ -5,6 +5,11 @@ class GroupsController < ApplicationController
         @groups = current_user.groups
     end
 
+    def show
+      @category = Group.includes(:buys).find(params[:id])
+      @buys = @category.buys.order(created_at: 'desc')
+    end
+
     def new
         @group = Group.new
     end
