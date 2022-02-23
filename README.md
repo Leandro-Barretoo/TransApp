@@ -1,56 +1,75 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Budget App
 
-# Project Name
+![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
-> Description the project.
+> A mobile web application that lets you manage and keep track of transactions.
 
+![screenshot](./app/assets/images/transapp.png)
+
+A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Ruby on Rails
+- PostgreSQL
 
-## Live Demo (if available)
+## Live Link
 
-[Live Demo Link](https://livedemo.com)
+[Heroku](https://transaction-a.herokuapp.com/)
 
+## Demo
+
+[Demo](https://www.loom.com/share/f0dd8583e58b412c9c722f79153efaf9)
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Rails](https://gorails.com/)
+
 ### Setup
+
+- Make sure you have Ruby on Rails set up properly on your computer
+- Clone or download this repo on your machine with `git clone git@github.com:Leandro-Barretoo/TransApp.git`
+- Enter project directory with `cd TransApp`
 
 ### Install
 
-### Usage
+```sh
+bundle install or bundle i
+```
 
-### Run tests
+### Database
 
-### Deployment
+```sh
+# Create the database
+rails db:create
 
+## Apply migration
+rails db:migrate
+```
 
+### Run
+
+```sh
+rails s
+```
+
+### Test
+
+```sh
+rspec
+```
 
 ## Authors
 
-👤 **Author1**
+👤 **Leandro Barreto**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Leandro-Barretoo](https://github.com/Leandro-Barretoo)
+- LinkedIn: [Leandro Barreto](https://www.linkedin.com/in/leandroobarreto/)
 
 ## 🤝 Contributing
 
@@ -64,10 +83,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
+- Original design idea by Gregoire Vella on [Behance](https://www.behance.net/gregoirevella).
 
-## 📝 License
+## License
 
-This project is [MIT](./MIT.md) licensed.
+[MIT](./LICENSE)

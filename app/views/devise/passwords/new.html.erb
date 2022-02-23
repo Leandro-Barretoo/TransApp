@@ -1,0 +1,15 @@
+<div class="signup-form-container">
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <div class="signup-nav">
+      <%= render "devise/shared/back" %>
+      <%= f.submit "Ok" %>
+    </div>
+    <h2 class="forgot-title">Forgot your password</h2>
+    <%= render "devise/shared/error_messages", resource: resource %>
+    <div class="input-fields">
+      <div class="field">
+        <%= f.email_field :email, autofocus: true, placeholder: "Email", autocomplete: "email" %>
+      </div>
+    </div>
+  <% end %>
+</div>

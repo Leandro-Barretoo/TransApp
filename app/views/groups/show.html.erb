@@ -1,0 +1,22 @@
+<div class="group-show-container">
+    <div class="group-show-header">
+        <%= render "devise/shared/back" %>
+        <span class="group-show-title">Transactions</span>
+        <span class="dot"></span>
+    </div>
+    <div class="total-container">
+        <span>Total</span>
+        <span>$<%= @category.total.round %></span>
+    </div>
+    <div class="group-container">
+        <% @buys.each do |buy| %>
+            <div class="group-item" style="justify-content: space-between;">
+                <div class="group-name"><%= buy.name %></div>
+                <div class="buy-amount">$ <%= buy.amount %></div>
+            </div>
+        <% end %>
+    </div>
+    <div class="add-category-container">
+        <%= link_to 'Add transaction', new_buy_path, class: "add-category-btn" %>
+    <div>
+</div>
