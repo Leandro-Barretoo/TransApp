@@ -310,3 +310,11 @@ p {
     margin: 12px 0;
     color: lightslategray;
 }
+
+.forgot-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #969696;
+    padding: 10px;
+}
